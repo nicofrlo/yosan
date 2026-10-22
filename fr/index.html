@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yosan · Confidentialité et assistance</title>
+  <meta name="description" content="Suivez vos dépenses sur iPhone sans confier vos codes bancaires à personne.">
+  <link rel="icon" href="../icon.png">
+  <link rel="alternate" hreflang="en" href="https://nicofrlo.github.io/yosan/">
+  <link rel="alternate" hreflang="fr" href="https://nicofrlo.github.io/yosan/fr/">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #ffffff;
+      --card: #f4f4f7;
+      --text: #111118;
+      --secondary: #5c5c6b;
+      --accent: #4f46e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #000000;
+        --card: #1c1c22;
+        --text: #f2f2f7;
+        --secondary: #a1a1ad;
+        --accent: #6366f1;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 32px 16px 64px; }
+    header { display: grid; grid-template-columns: auto 1fr auto; gap: 4px 16px; align-items: center; }
+    header img { grid-row: span 2; border-radius: 16px; }
+    h1 { margin: 0; font-size: 28px; }
+    .tagline { margin: 0; grid-column: 2 / 4; color: var(--secondary); }
+    .lang { grid-row: 1; grid-column: 3; font-size: 15px; }
+    h2 { margin: 40px 0 8px; font-size: 22px; }
+    h3 { margin: 24px 0 8px; font-size: 17px; }
+    ul { margin: 0; padding: 16px 16px 16px 32px; background: var(--card); border-radius: 12px; }
+    li + li { margin-top: 8px; }
+    p, li { color: var(--secondary); }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="../icon.png" width="64" height="64" alt="">
+      <h1>Yosan</h1>
+      <a class="lang" href="../" hreflang="en" lang="en">English</a>
+      <p class="tagline">Suivez vos dépenses sur iPhone sans confier vos codes bancaires à personne.</p>
+    </header>
+
+    <section id="privacy">
+      <h2>Politique de confidentialité</h2>
+      <p>Yosan ne collecte aucune donnée et ne se connecte jamais à internet : pas de compte, pas de pub, pas de statistiques, pas de pistage. Vos dépenses ne quittent jamais votre iPhone, sauf si vous les envoyez.</p>
+      <h3>Vos données restent sur votre iPhone</h3>
+      <ul>
+        <li>Ce que vous ajoutez ou importez est enregistré par Yosan sur votre iPhone, et nulle part ailleurs. Personne d’autre ne peut le voir, pas même son développeur.</li>
+        <li>Les sauvegardes de votre iPhone (iCloud ou ordinateur) l’incluent, comme les données des autres apps.</li>
+        <li>Supprimer Yosan supprime tout. Pour en garder une copie, utilisez d’abord Tout sauvegarder dans Réglages.</li>
+      </ul>
+      <h3>Ajout automatique</h3>
+      <ul>
+        <li>Apple Pay : votre automatisation Raccourcis transmet à Yosan le montant et le commerçant de chaque paiement.</li>
+        <li>Notifications bancaires : votre automatisation transmet à Yosan le texte de la notification. Yosan le lit sur votre iPhone, ne garde que le montant et le commerçant, et n’enregistre jamais le texte.</li>
+        <li>Les relevés importés sont lus sur votre iPhone. Les sauvegardes et exports ne vont que là où vous les envoyez.</li>
+        <li>Siri et Raccourcis : ce que vous enregistrez est transmis à Yosan sur votre iPhone, comme une dépense saisie.</li>
+      </ul>
+      <p>Questions : <a href="mailto:yosan.budget@gmail.com">yosan.budget@gmail.com</a>. Mise à jour le 22 octobre 2026.</p>
+    </section>
+
+    <section id="support">
+      <h2>Assistance</h2>
+      <p>Une question, un problème ou une idée : écrivez à <a href="mailto:yosan.budget@gmail.com">yosan.budget@gmail.com</a>.</p>
+      <p>Nouvel iPhone : dans Yosan, Réglages → Tout sauvegarder, puis Importer un fichier sur le nouvel iPhone. Les sauvegardes de votre iPhone incluent aussi Yosan.</p>
+    </section>
+  </main>
+</body>
+</html>
